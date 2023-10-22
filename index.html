@@ -10,15 +10,12 @@
 
 <body>
     <div id="app">
-        <p v-show="isShow">{{name}}  {{family}}</p>
-        <!-- <button @click="toggleStatus" v-if="isShow" >Hide</button>
-        <button @click="toggleStatus" v-if-else="name=='ali'">Show Ali </button>
-        <button @click="toggleStatus" v-else>Show</button> -->
-        <button @click="toggleStatus" >
-            <span v-if="isShow">Hide</span>
-            <span v-else-if="name=='ali'">Show Ali</span>
-            <span v-else>Show</span>
-        </button>
+        <ul>
+            <li v-for="(user,index) in users">{{user}}-{{index}}</li>
+         </ul> 
+         <ul>
+            <li v-for="contact in contacts">{{contact.name}}  {{contact.family}}</li>
+         </ul>
 
     </div>
     <script src="app.js"></script>
