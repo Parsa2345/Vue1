@@ -2,17 +2,16 @@ const app = Vue.createApp({
 
     data() {
         return {
-            name: "ali",
-            family: "Parsa",
-            isShow: false,
-            users: ["ali", "naghi", "gholi", "sall", "joe"],
+            name1: "ali",
+            family1: "Parsa",
+            isShow: false, 
             contacts: [
-                { name: "Mohsen", family: "Parsa" },
-                { name: "ali", family: "alavi" },
-                { name: "naghi", family: "naghavi" },
-                { name: "hasan", family: "hasani" },
-                { name: "sara", family: "boor" },
-                { name: "joe", family: "bing" },
+                { name: "Mohsen", family: "Parsa" ,html:"<h1> name1 family1</h1>" },
+                { name: "ali", family: "alavi" ,html:"<h1> {{name}}  {{family}}</h1>" },
+                { name: "naghi", family: "naghavi" ,html:"<h1> {{name}}  {{family}}</h1>" },
+                { name: "hasan", family: "hasani" ,html:"<h1> {{name}}  {{family}}</h1>" },
+                { name: "sara", family: "boor" ,html:"<h1> {{name}}  {{family}}</h1>" },
+                { name: "joe", family: "bing" ,html:"<h1> {{name}}  {{family}}</h1>" },
 
             ]
         }

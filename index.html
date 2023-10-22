@@ -10,11 +10,11 @@
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(user,index) in users">{{user}}-{{index}}</li>
-         </ul> 
+ 
          <ul>
-            <li v-for="contact in contacts">{{contact.name}}  {{contact.family}}</li>
+            <li v-for="contact in contacts">
+                <span v-text="contact.name"></span>
+                <span v-html="contact.html"></span> 
          </ul>
 
     </div>
